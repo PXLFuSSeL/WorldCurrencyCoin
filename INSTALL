@@ -1,0 +1,9 @@
+Building 8Bit
+
+See doc/readme-qt.rst for instructions on building 8Bit QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of 8Bit.
+
+See doc/build-*.txt for instructions on building 8bitd,
+the intended-for-services, no-graphical-interface, reference
+implementation of 8Bit.
