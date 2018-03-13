@@ -86,6 +86,12 @@ Notes
 The release is built with GCC and then "strip WorldCurrencyCoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
+If you are getting error: "crypto/hmac_sha256.cpp:34:1: fatal error: opening 
+dependency file obj/crypto/hmac_sha256.d: No such file or directory", please 
+run the command below at src folder, then re-build again.
+
+    mkdir obj/crypto
+
 
 miniupnpc
 ---------
