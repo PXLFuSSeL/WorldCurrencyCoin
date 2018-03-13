@@ -1093,10 +1093,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "WCC";
+    return pathRet / "WorldCurrencyCoin";
 #else
     // Unix
-    return pathRet / ".wcc";
+    return pathRet / ".worldcurrencycoin";
 #endif
 #endif
 }
@@ -1362,5 +1362,3 @@ std::string DateTimeStrFormat(const char* pszFormat, int64_t nTime)
     ss << boost::posix_time::from_time_t(nTime);
     return ss.str();
 }
-
-
