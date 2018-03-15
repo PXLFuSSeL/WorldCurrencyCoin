@@ -63,7 +63,7 @@ QFont bitcoinAddressFont()
 //#else
 //    font.setStyleHint(QFont::TypeWriter);
 //#endif
-    QFile res(":/fonts/8bit");
+    QFile res(":/fonts/wcc");
     res.open(QIODevice::ReadOnly);
     QFontDatabase::addApplicationFontFromData(res.readAll());
     QFont font;

@@ -1093,10 +1093,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "WorldCurrencyCoin";
+    return pathRet / "WCC";
 #else
     // Unix
-    return pathRet / ".worldcurrencycoin";
+    return pathRet / ".wcc";
 #endif
 #endif
 }

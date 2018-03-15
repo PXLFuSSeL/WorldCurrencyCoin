@@ -2693,8 +2693,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or 8bitd</source>
-        <translation>Envía un comando a -server o 8bitd</translation>
+        <source>Send command to -server or wccd</source>
+        <translation>Envía un comando a -server o wccd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2721,8 +2721,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: 8bitd.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: 8bitd.pid)</translation>
+        <source>Specify pid file (default: wccd.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: wccd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2739,7 +2739,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=8bitrpc
+rpcuser=wccrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

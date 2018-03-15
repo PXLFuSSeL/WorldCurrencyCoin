@@ -4,12 +4,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About wcc</source>
-        <translation>O 8Bitu</translation>
+        <translation>O wccu</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;wcc&lt;/b&gt; version</source>
-        <translation>Verze &lt;b&gt;8Bitu&lt;/b&gt; </translation>
+        <translation>Verze &lt;b&gt;wccu&lt;/b&gt; </translation>
     </message>
     <message>
         <location line="+41"/>
@@ -353,7 +353,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about wcc</source>
-        <translation>Zobraz informace a 8Bitu</translation>
+        <translation>Zobraz informace a wccu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -449,7 +449,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+193"/>
         <source>&amp;About wcc</source>
-        <translation>&amp;O 8Bitu</translation>
+        <translation>&amp;O wccu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1250,7 +1250,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting wcc.</source>
-        <translation>Zde můžeš nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartu 8Bitu.</translation>
+        <translation>Zde můžeš nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartu wccu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1317,7 +1317,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting wcc.</source>
-        <translation>Nastavení se projeví až po restartu 8Bitu.</translation>
+        <translation>Nastavení se projeví až po restartu wccu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1603,7 +1603,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location line="+25"/>
         <source>wcc Core</source>
-        <translation>Jádro 8Bitu</translation>
+        <translation>Jádro wccu</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1613,7 +1613,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location line="+7"/>
         <source>Open the wcc debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři logovací soubor 8Bitu z aktuálního datového adresáře. Pro velké logy to může trvat několik sekund.</translation>
+        <translation>Otevři logovací soubor wccu z aktuálního datového adresáře. Pro velké logy to může trvat několik sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2684,7 +2684,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
         <source>wcc version</source>
-        <translation>Verze 8Bitu</translation>
+        <translation>Verze wccu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2693,8 +2693,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or 8bitd</source>
-        <translation>Pošli příkaz na -server nebo 8bitd</translation>
+        <source>Send command to -server or wccd</source>
+        <translation>Pošli příkaz na -server nebo wccd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: 8bitd.pid)</source>
-        <translation>Urči pid soubor (výchozí: 8bitd.pid)</translation>
+        <source>Specify pid file (default: wccd.pid)</source>
+        <translation>Urči pid soubor (výchozí: wccd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,7 +2736,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=8bitrpc
+rpcuser=wccrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3221,7 +3221,7 @@ for example: alertnotify=echo %%s | mail -s &quot;wcc Alert&quot; admin@foo.com
     <message>
         <location line="+4"/>
         <source>Error loading wallet.dat: Wallet requires newer version of wcc</source>
-        <translation>Chyba načítání wallet.dat: Peněženka vyžaduje novější verzi 8Bitu</translation>
+        <translation>Chyba načítání wallet.dat: Peněženka vyžaduje novější verzi wccu</translation>
     </message>
     <message>
         <location line="+1"/>

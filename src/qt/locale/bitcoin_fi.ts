@@ -4,7 +4,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About wcc</source>
-        <translation>Tietoa 8Bitista</translation>
+        <translation>Tietoa wccista</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -233,7 +233,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI 8BITISI&lt;/b&gt;!</translation>
+        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI wccISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -359,7 +359,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+4"/>
         <source>Show information about wcc</source>
-        <translation>Näytä tietoja 8Bitista</translation>
+        <translation>Näytä tietoja wccista</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -455,7 +455,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+193"/>
         <source>&amp;About wcc</source>
-        <translation>&amp;Tietoa 8Bitista</translation>
+        <translation>&amp;Tietoa wccista</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1583,7 +1583,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+7"/>
         <source>Show the wcc-Qt help message to get a list with possible wcc command-line options.</source>
-        <translation>Näytä wcc-Qt:n avustusohje saadaksesi listan käytettävistä 8Bitin komentokehotteen määritteistä.</translation>
+        <translation>Näytä wcc-Qt:n avustusohje saadaksesi listan käytettävistä wccin komentokehotteen määritteistä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1608,7 +1608,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+25"/>
         <source>wcc Core</source>
-        <translation>8Bitin ydin</translation>
+        <translation>wccin ydin</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1628,7 +1628,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
         <source>Welcome to the wcc RPC console.</source>
-        <translation>Tervetuloa 8Bitin RPC-konsoliin.</translation>
+        <translation>Tervetuloa wccin RPC-konsoliin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1688,7 +1688,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Lähetä 8Biteja</translation>
+        <translation>Lähetä wcceja</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -2689,7 +2689,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
         <source>wcc version</source>
-        <translation>8Bitin versio</translation>
+        <translation>wccin versio</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2698,8 +2698,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or 8bitd</source>
-        <translation>Syötä komento kohteeseen -server tai 8bitd</translation>
+        <source>Send command to -server or wccd</source>
+        <translation>Syötä komento kohteeseen -server tai wccd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2723,7 +2723,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: 8bitd.pid)</source>
+        <source>Specify pid file (default: wccd.pid)</source>
         <translation>Määritä prosessitiedosto (oletus: wcc.pid)</translation>
     </message>
     <message>
@@ -2741,7 +2741,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=8bitrpc
+rpcuser=wccrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

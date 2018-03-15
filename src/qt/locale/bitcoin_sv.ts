@@ -2693,8 +2693,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or 8bitd</source>
-        <translation>Skicka kommando till -server eller 8bitd</translation>
+        <source>Send command to -server or wccd</source>
+        <translation>Skicka kommando till -server eller wccd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: 8bitd.pid)</source>
-        <translation>Ange pid filen (standard 8bitd.pid)</translation>
+        <source>Specify pid file (default: wccd.pid)</source>
+        <translation>Ange pid filen (standard wccd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,7 +2736,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=8bitrpc
+rpcuser=wccrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

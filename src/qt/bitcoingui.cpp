@@ -88,7 +88,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     nWeight(0)
 {
     resize(850+95, 550);
-    setWindowTitle(tr("WorldCurrenyCoin") + " - " + tr("Wallet"));
+    setWindowTitle(tr("WorldCurrencyCoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -96,7 +96,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     //setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
 #endif
-    QFile res(":/fonts/8bit");
+    QFile res(":/fonts/wcc");
     res.open(QIODevice::ReadOnly);
     QFontDatabase::addApplicationFontFromData(res.readAll());
     //QFont f;

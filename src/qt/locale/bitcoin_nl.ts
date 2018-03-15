@@ -2693,8 +2693,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or 8bitd</source>
-        <translation>Verstuur commando naar -server of 8bitd</translation>
+        <source>Send command to -server or wccd</source>
+        <translation>Verstuur commando naar -server of wccd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,7 +2718,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: 8bitd.pid)</source>
+        <source>Specify pid file (default: wccd.pid)</source>
         <translation>Selecteer pid bestand (standaard: wcc.conf)</translation>
     </message>
     <message>
@@ -2736,7 +2736,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=8bitrpc
+rpcuser=wccrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

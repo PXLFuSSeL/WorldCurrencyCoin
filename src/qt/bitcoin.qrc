@@ -113,6 +113,6 @@
         <file alias="zh_TW">locale/bitcoin_zh_TW.qm</file>
     </qresource>
     <qresource prefix="/fonts">
-        <file alias="8bit">res/fonts/8bit.ttf</file>
+        <file alias="wcc">res/fonts/wcc.ttf</file>
     </qresource>
 </RCC>
