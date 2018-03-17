@@ -1278,7 +1278,7 @@ bool CDarkSendPool::SignFinalTransaction(CTransaction& finalTransactionNew, CNod
                     LogPrintf("CDarkSendPool::Sign - My entries are not correct! Refusing to sign. %d entries %d target. \n", foundOutputs, targetOuputs);
                     return false;
                 }
-				
+
                 if(fDebug) LogPrintf("CDarkSendPool::Sign - Signing my input %i\n", mine);
                 if(!SignSignature(*pwalletMain, prevPubKey, finalTransaction, mine, int(SIGHASH_ALL|SIGHASH_ANYONECANPAY))) { // changes scriptSig
                     if(fDebug) LogPrintf("CDarkSendPool::Sign - Unable to sign my own transaction! \n");
@@ -1985,7 +1985,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey){
     //if(GetTransaction(vin.prevout.hash, txVin, hash, true)){
     if(GetTransaction(vin.prevout.hash, txVin, hash)){
         BOOST_FOREACH(CTxOut out, txVin.vout){
-            if(out.nValue == 112*COIN){
+            if(out.nValue == 50000*COIN){
                 if(out.scriptPubKey == payee2) return true;
             }
         }
@@ -2140,7 +2140,7 @@ void ThreadCheckDarkSendPool()
             it = vecMasternodes.begin();
             while(it != vecMasternodes.end()){
                 if((*it).enabled == 4 || (*it).enabled == 3){
-                    LogPrintf("Removing inactive masternode %s\n", (*it).addr.ToString().c_str());
+                    LogPrintf("Removing inactive masternode %s, reason=%d\n", (*it).addr.ToString().c_str(), (*it).enabled);
                     it = vecMasternodes.erase(it);
                 } else {
                     ++it;

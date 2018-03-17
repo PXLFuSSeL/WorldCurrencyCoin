@@ -110,7 +110,7 @@ void ProcessMessageMasternode(CNode* pfrom, std::string& strCommand, CDataStream
             return;
         }
 
-        
+
 
         //search existing masternode list, this is where we update existing masternodes with new dsee broadcasts
 
@@ -154,7 +154,7 @@ void ProcessMessageMasternode(CNode* pfrom, std::string& strCommand, CDataStream
 
         CValidationState state;
         CTransaction tx = CTransaction();
-        CTxOut vout = CTxOut(111*COIN, darkSendPool.collateralPubKey);
+        CTxOut vout = CTxOut(49999*COIN, darkSendPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
         //if(AcceptableInputs(mempool, state, tx)){
@@ -594,14 +594,15 @@ void CMasterNode::Check()
     if(!unitTest){
         CValidationState state;
         CTransaction tx = CTransaction();
-        CTxOut vout = CTxOut(111*COIN, darkSendPool.collateralPubKey);
+        CTxOut vout = CTxOut(49999*COIN, darkSendPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
         //if(!AcceptableInputs(mempool, state, tx)){
         bool* pfMissingInputs = false;
-	if(!AcceptableInputs(mempool, tx, false, pfMissingInputs)){
+	      if(!AcceptableInputs(mempool, tx, false, pfMissingInputs)){
             enabled = 3;
+            LogPrintf("Fehler");
             return;
         }
     }
