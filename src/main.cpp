@@ -3451,6 +3451,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (pfrom->nVersion != 0)
         {
             pfrom->Misbehaving(1);
+            LogPrintf("Version != 0\n");
             return false;
         }
 
@@ -3563,6 +3564,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
     {
         // Must have a version message before anything else
         pfrom->Misbehaving(1);
+        LogPrintf("no version\n");
         return false;
     }
 
@@ -3584,6 +3586,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (vAddr.size() > 1000)
         {
             pfrom->Misbehaving(20);
+            LogPrintf("addr\n");
             return error("message addr size() = %u", vAddr.size());
         }
 
@@ -3646,6 +3649,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (vInv.size() > MAX_INV_SZ)
         {
             pfrom->Misbehaving(20);
+            LogPrintf("inv");
             return error("message inv size() = %u", vInv.size());
         }
 
@@ -3698,6 +3702,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         if (vInv.size() > MAX_INV_SZ)
         {
             pfrom->Misbehaving(20);
+            LogPrintf("getData\n");
             return error("message getdata size() = %u", vInv.size());
         }
 
@@ -3863,7 +3868,10 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             if (nEvicted > 0)
                 LogPrint("mempool", "mapOrphan overflow, removed %u tx\n", nEvicted);
         }
-        if (tx.nDoS) pfrom->Misbehaving(tx.nDoS);
+        if (tx.nDoS){
+            pfrom->Misbehaving(tx.nDoS);
+            LogPrintf("tx\n");
+        }
     }
 
 
@@ -3882,7 +3890,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
         if (ProcessBlock(pfrom, &block))
             mapAlreadyAskedFor.erase(inv);
-        if (block.nDoS) pfrom->Misbehaving(block.nDoS);
+        if (block.nDoS){
+            pfrom->Misbehaving(block.nDoS);
+        }
     }
 
 
@@ -4021,6 +4031,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                 // peer might be an older or different implementation with
                 // a different signature key, etc.
                 pfrom->Misbehaving(10);
+                LogPrintf("alert\n");
             }
         }
     }
@@ -4341,7 +4352,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    int64_t ret = static_cast<int64_t>(blockValue * 0.733333333333333333); //67%
+    int64_t ret = static_cast<int64_t>(blockValue * 0.656716418); //60%
 
     return ret;
 }
