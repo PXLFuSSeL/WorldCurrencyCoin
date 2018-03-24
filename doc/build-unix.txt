@@ -10,11 +10,29 @@ software written by Thomas Bernard.
 UNIX BUILD NOTES
 ================
 
-To Build
+To Build Unix Headless
 --------
 
-cd src/
-make -f makefile.unix            # Headless WorldCurrencyCoin
+sudo apt-get update
+sudo apt-get install software-properties-common python-software-properties ufw
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev
+sudo apt-get install libdb4.8++-dev
+sudo apt-get install build-essential libssl-dev libboost-all-dev libqrencode-dev libminiupnpc-dev autoconf git-core
+git clone https://github.com/PXLFuSSeL/WorldCurrencyCoin.git
+cd WorldCurrencyCoin
+git clone https://github.com/bitcoin/secp256k1.git
+cd secp256k1
+git checkout a1d5ae1
+./autogen.sh
+./configure
+make
+sudo make install
+sudo ldconfig
+cd ../src
+mkdir obj/crypto
+make -f makefile.unix USE_UPNP=-
 
 See readme-qt.rst for instructions on building WorldCurrencyCoin QT,
 the graphical WorldCurrencyCoin.
